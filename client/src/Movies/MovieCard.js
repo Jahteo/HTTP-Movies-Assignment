@@ -8,8 +8,9 @@ const MovieCard = props => {
 
   const handleDelete = (e) => {
     e.preventDefault();
-    // axios.delete(`http://localhost:5000/api/movies/${id}`)
-    // .then(res => console.log(res, "from handleDelete"))
+    //FINISH HANDLE DELETE!!!!!
+    axios.delete(`http://localhost:5000/api/movies/${id}`)
+    .then(res => window.location = "/")
   }
 
   return (
